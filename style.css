@@ -1,0 +1,340 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('Raleway-LightItalic.eot');
+  src: url('Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('Raleway-LightItalic.woff2') format('woff2'),
+      url('Raleway-LightItalic.ttf') format('truetype'),
+      url('Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('Raleway-Light.eot');
+  src: url('Raleway-Light.eot?#iefix') format('embedded-opentype'),
+      url('Raleway-Light.woff2') format('woff2'),
+      url('Raleway-Light.ttf') format('truetype'),
+      url('Raleway-Light.svg#Raleway-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('Raleway-Medium.eot');
+  src: url('Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+      url('Raleway-Medium.woff2') format('woff2'),
+      url('Raleway-Medium.ttf') format('truetype'),
+      url('Raleway-Medium.svg#Raleway-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('Raleway-MediumItalic.eot');
+  src: url('Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('Raleway-MediumItalic.woff2') format('woff2'),
+      url('Raleway-MediumItalic.ttf') format('truetype'),
+      url('Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-BoldItalic.eot');
+  src: url('PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+      url('PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+      url('PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-Italic.eot');
+  src: url('PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+      url('PlayfairDisplay-Italic.woff2') format('woff2'),
+      url('PlayfairDisplay-Italic.ttf') format('truetype'),
+      url('PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-Regular.eot');
+  src: url('PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+      url('PlayfairDisplay-Regular.woff2') format('woff2'),
+      url('PlayfairDisplay-Regular.ttf') format('truetype'),
+      url('PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-Bold.eot');
+  src: url('PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+      url('PlayfairDisplay-Bold.woff2') format('woff2'),
+      url('PlayfairDisplay-Bold.ttf') format('truetype'),
+      url('PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+ul{
+  list-style-type: none;
+}
+
+.flexcontainer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: stretch;
+    max-width: 1860px;
+  }
+  
+  
+  .logothumbnail img{
+    max-width: 150px;
+    flex-shrink: 4;
+    position: relative;
+  }
+  
+.cart img{
+     position: static;
+     padding-right: 70px;
+     flex-wrap: nowrap;
+   }
+  
+.navi {
+    text-align: center;
+    min-width: 1000px;
+    list-style: none;
+    padding-top: 0px;
+    border: 0px;
+    margin: 0px;
+    padding-right: 10px;
+  
+  }
+  
+.navi li {
+    display: inline;
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-style: normal;
+
+  }
+  .navi a{
+    color:#e2574c;
+  }
+
+button {
+  color:#e2574c;
+  border-radius: 12px;
+}
+
+.catalogue1 img {
+  display: flex;
+  flex-direction: column;
+
+  
+}
+
+.catalogue2 img {
+  background-size: cover;
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  
+}
+
+.catalogue3 img {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+} 
+
+.titlepics {
+  display: flex;
+  max-width: 1500px;
+  max-height: 700px;
+  align-content: space-between;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
+
+
+}
+
+.container {
+  background-image: url(images/flower-bkgd.jpg);
+  background-size: cover;
+  position: relative;
+  display: block;
+  height: 250px;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+
+h1{
+  font-family: 'Playfair Display';
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+}
+
+h2{
+  font-family: 'Raleway';
+    font-weight: 300;
+    font-style: normal;
+}
+
+h3{
+  font-family: 'Playfair Display';
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+}
+
+h3 .lovedprods{
+  font-family: 'Playfair Display';
+  font-weight: bold;
+  font-style: normal;
+}
+
+h3 ul{
+  display: flex;
+  align-content: row;
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-style: normal;
+}
+
+h3 .clothing{
+  font-family: 'Playfair Display';
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.spring-summer-font{
+  font-family: 'Playfair Display';
+    font-weight: normal;
+    font-style: normal;
+}
+
+h4{
+  font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+p{
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+
+.boldstyle{
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-style: normal;
+}
+
+*{
+  border-top: 1px solid black;
+   border-bottom: 1px solid #ccc;
+}
+
+.cart {
+  text-align: right;
+}
+
+.logothumbnail{
+  position: relative;
+  top: -2px;
+  max-height: 50%;
+  max-width: 50%;
+  padding: 10px;
+
+}
+
+h5{
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    background-image: url(images/wave-bkgd.jpg); 
+    background-size: cover;
+    height: 250px;
+    margin: 6px;
+    border: 0px;
+}
+
+h5 .update{
+  font-family: 'Playfair Display';
+  font-weight: bold;
+  font-style: normal;
+}
+
+h5 p{
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-style: normal;
+}
+
+input{
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;
+}
+
+.clothing{
+  color:#e2574c
+}
+
+.feet{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  bottom: 0px
+}
+
+.copywrite{
+  margin: 0;
+  border: 0;
+}
+
+.copywrite, .feet{
+  text-align: left;
+}
+
+.feet{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.other-footer{
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+@media screen and (min-width: 480px) {
+  .flexcontainer{
+    flex-wrap: nowrap;
+  }
