@@ -100,10 +100,16 @@ ul{
     justify-content: center;
     flex-direction: row;
     align-content: stretch;
-    max-width: 599px;
+    max-width: 100vw;
+    width: 100%;
     height: 150px;
     flex-shrink: 1;
     min-width: 300px;
+    position: fixed;
+    overflow: hidden;
+    background-color: white;
+    top: 0;
+    z-index: 10;
   }
 
   .logothumbnail a {
@@ -181,7 +187,7 @@ ul{
     font-family: 'Raleway';
     font-weight: 500;
     font-style: bold;
-    font-size: 20px;
+    font-size: 16px;
     order: 2;
     margin: 10px;
     width: 30%;
@@ -192,17 +198,6 @@ ul{
     text-decoration: none;
   }
 
-button {
-  color: white;
-  border-radius: 25px;
-  background-color: #e2574c;
-  width: 100px;
-  position: absolute;
-  font-size: 1rem;
-  right: .01rem;
-  padding: .25rem 1.5rem;
-  text-align: center;
-}
 
 .titlepics {
   display: flex;
@@ -328,25 +323,14 @@ button {
   background-size: auto, 300px, cover;
   position: relative;
   display: flex;
-  height: 450px;
-  max-width: 1280px;
+  height: 400px;
+  max-width: 2000px;
   flex-grow: 2;
   align-content: center;
   align-items: center;
   justify-content: center;
-} 
-
-/* .container img[src="images/banner-girl.png"] {
-  height: 400px;
-  min-width: 150px;
   margin-top: 50px;
-  position: static;
-} */
-
-.container img {
-  max-width: 20%;
-  max-height: auto;
-}
+} 
 
 h1{
   display: flex;
@@ -371,6 +355,7 @@ h1{
   justify-content: center;
   align-content: center;
   padding: 20px;
+  padding-top: 0px;
   color: #2d2d2d;
 }
 
@@ -386,19 +371,20 @@ h2{
   flex-direction: column;
   position: absolute;
   padding: 35px;
+  padding-top: 55px;
   color: white;
-  padding-top: 30px;
 }
 
+/* new collection (spring/summer) */
 h2 .newcollection {
   display: flex;
   align-content: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 
-
+/* most loved products */
 h3{
   font-family: 'Playfair Display';
     font-weight: normal;
@@ -471,7 +457,7 @@ h3 ul{
     align-content: center;
     justify-content: center;
     padding: 10px;
-    font-size: 2em;
+    font-size: 34px;
 }
 
 h2 .year {
@@ -481,7 +467,7 @@ h2 .year {
     font-style: normal;
     align-content: center;
     justify-content: center;
-    font-size: 2em;
+    font-size: 34px;
 }
 
 .catalogue1, .catalogue2, .catalogue3, p{
@@ -519,7 +505,7 @@ h1 p {
 } */
 
 
-h5{
+.updates {
     font-family: 'Playfair Display';
     font-weight: normal;
     font-style: italic;
@@ -527,7 +513,7 @@ h5{
     background-image: url(images/wave-bkgd.jpg); 
     background-size: cover;
     position: static;
-    height: 250px;
+    height: 350px;
     margin-top: 6px;
     margin-bottom: 6px;
     border: 0px;
@@ -538,7 +524,7 @@ h5{
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  height: 250px;
+  height: 350px;
   line-height: 2;
 }
 
@@ -563,14 +549,36 @@ h5 p{
   font-style: normal;
 }
 
+form {
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  width: 100%;
+}
+
 input{
 -webkit-border-radius: 50px;
 -moz-border-radius: 50px;
 border-radius: 50px;
-width: 15rem;
+width: 50%;
+max-width: px;
 height: 2rem;
 margin-top: 15px;
+position: relative;
 }
+
+button {
+  color: white;
+  border-radius: 25px;
+  background-color: #e2574c;
+  width: 6rem;
+  height: 1.7rem;
+  position: absolute;
+  font-size: 1rem;
+  margin-top: 21px;
+  margin-left: 15%;
+}
+
 
 .main-carousel p {
   font-family: 'Raleway';
@@ -619,6 +627,7 @@ footer {
   justify-content: space-between;
   color: white;
   margin-bottom: 50px;
+  padding: 0px;
 }
 
 .find-us li {
@@ -641,6 +650,10 @@ footer {
   color: white;
 }
 
+footer .other-footer .coloredfeet p {
+  color: #969696;
+}
+
 .smedia {
   display: none;
 }
@@ -649,7 +662,7 @@ footer {
   .flexcontainer {
     display: flex;
     align-items: center;
-    max-width: 1239px;
+    max-width: 2000px;
     height: 100px;
     flex-shrink: 1;
     min-width: 600px;
@@ -701,7 +714,7 @@ footer {
   
   
   .spring-summer-collection {
-    width: 1239px;
+    max-width: 1239px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -718,7 +731,7 @@ footer {
     }
     .titlepics {
     display: flex;
-    max-width: 1239px;
+    max-width: 1800px;
     max-height: auto;
     align-content: center;
     flex-direction: row;
@@ -835,7 +848,8 @@ h1 p {
   font-size: 34px;
 }
 
-h5 .signup{
+
+ .signup{
   font-size: 34px;
 }
 

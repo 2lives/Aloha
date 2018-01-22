@@ -21,34 +21,35 @@
   <script src="https://use.fontawesome.com/11ee5a760a.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
   
-  <div class="flexcontainer">
+  <div class="flexcontainer" id="header-nav">
     <div class="logothumbnail">
       <a href="#"><img src="images/aloha-logo.svg"></a>
     </div>
     <div class="table">
       <ul class="navi">    
-        <li><a href="#handtextid">About</a></li>
-        <li><a href="#titlepicsnav">Shop</a></li>
-        <li><a href="#h3textnav">Featured</a></li>
-        <li><a href="#footlink">Updates</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#updates">Updates</a></li>
       </ul>
     </div>
     <div class="cart">
         <a href="#"><img src="images/cart-icon.svg"/></a>
     </div>
   </div>
+
 <div class="container">
   <!-- <img src="images/banner-girl.png"> -->
   <h2>
     <span class="newcollection">NEW COLLECTION</span> 
     <div class="spring-summer-collection">
       <span class="spring-summer-font">Spring/Summer <br></span> 
-      <span class="year">2017</span>
+      <span class="year" id="yearnav">2017</span>
     </div>
   </h2>
 </div>
 <h1>
-  <div class="handtext" id="handtextid">
+  <div class="handtext" id="about">
     Hand-Crafted &nbsp;<span class="boldstyle"> Styles</span><br>
   </div>
   <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>   
@@ -56,7 +57,7 @@
 </head>
 
 <body> <!-- links -->
-<section class="titlepics" id="titlepicsnav"> 
+<section class="titlepics" id="shop"> 
   <div class="catalogue1-2">
     <div class="catalogue1">
       <p>MEN'S</p>
@@ -78,12 +79,12 @@
       <p>BAGS</p>
     </div>
   </div>
-  <div class="catalogue1-1">
+  <div class="catalogue1-1" id="featuressmoothscroll">
       <p>WOMEN'S</p>
   </div>
 </section>  
 <h3>
-     <div class= "h3text" id="h3textnav">
+     <div class= "h3text" id="featured">
           Most-Loved &nbsp;<span class="lovedprods"> Products</span>
     </div>
 </h3>
@@ -122,24 +123,27 @@
         <p>DRESSES<br><span class="clothing">Blue Silk Dress</span><br>$119.00</p>
      </div>
     </div><!-- .main-carousel -->
-<h5>
+    
+  <section class="updates" id="updates">
     <div class="h5container">
       <div class="h2-special-text">
       <span class="signup">Sign-up for </span><span class="update">Updates</span>
       </div>
       <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from out blog. Unsubscribe at any time.</p>
-    <form>
-      <input type="text" name="your email" placeholder="Your Email"/>
+    <form id="emailbox">
+      <input type="text" name="your email" id="enteremail" placeholder="Your Email"/>
+      <button type="submit" id="subbutton">Subscribe</button> 
     </form>
-    <button type="submit">Subscribe</button> 
-</h5>
+    <!-- <button type="submit">Subscribe</button>  -->
+  </section>
+  
 
 <footer id="footlink">
   <!-- <section id="footlink"> -->
     <div class="other-footer">
       <p class="copywrite">&copy; 2016 Aloha Apparel Co. <br> Powered by HTML and CSS.</p><br>
       <p class="feet">604-604-6040, &nbsp;<a href="info@alohaapprrel.com">info@alohaapparrel.com</a></p><br>
-      <p class="feet">1490 W Broadway <br> Vancouver, BC., Canada</p>
+      <p class="coloredfeet">1490 W Broadway <br> Vancouver, BC., Canada</p>
     </div>
   
     <ul class="find-us">  <!-- small logos -->
