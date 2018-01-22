@@ -135,8 +135,8 @@ ul{
   }
 
 .cart img[src="images/cart-icon.svg"] {
-  width: 80px;
-  padding: 0px;
+  width: 70px;
+  padding-top: 20px;
 }
 
 
@@ -175,6 +175,7 @@ ul{
     list-style: none;
     padding: 0px;
     border: 0px;
+    border-top: 1px solid #999;
     margin-bottom: 0px;
     max-width: 100%;
     flex-grow: 1;
@@ -191,18 +192,20 @@ ul{
     order: 2;
     margin: 10px;
     width: 30%;
-
   }
   .navi a{
     color:#e2574c;
     text-decoration: none;
   }
 
+  .navi a:hover  {
+    color: (rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 1.0))
+  }
+
 
 .titlepics {
   display: flex;
   max-width: 599px;
-  max-height: auto;
   align-content: stretch;
   justify-content: stretch;
   align-items: stretch;
@@ -217,12 +220,14 @@ ul{
   text-align: center;
   margin: 0;
   color: white;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8)
 }
 
 .catalogue1 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
              url(images/mens-category.jpg);
   background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,6 +241,7 @@ ul{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
             url(images/womens-category.jpg);
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,6 +263,7 @@ ul{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
         url(images/trends-category.jpg);
   background-size: cover;
+  background-position: center;
   display: flex; 
   justify-content: center;
   align-items: center;
@@ -270,6 +277,7 @@ ul{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
            url(images/glasses-category.jpg);
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,6 +300,7 @@ ul{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
        url(images/sale-category.jpg);
   background-size: cover;
+  background-position: center;
   display: flex; 
   justify-content: center;
   align-items: center;
@@ -305,6 +314,7 @@ ul{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
        url(images/bags-category.jpg);
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -318,12 +328,12 @@ ul{
   
   /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); */
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-            url(images/banner-girl.png) no-repeat top center,  
+            url(images/banner-girl.png) no-repeat top center, 
             url(images/flower-bkgd.jpg);
   background-size: auto, 300px, cover;
   position: relative;
   display: flex;
-  height: 400px;
+  height: 600px;
   max-width: 2000px;
   flex-grow: 2;
   align-content: center;
@@ -373,6 +383,7 @@ h2{
   padding: 35px;
   padding-top: 55px;
   color: white;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8)
 }
 
 /* new collection (spring/summer) */
@@ -512,6 +523,8 @@ h1 p {
     text-align: center;
     background-image: url(images/wave-bkgd.jpg); 
     background-size: cover;
+    background-position: 100%, 100%;
+    background-repeat: no-repeat;
     position: static;
     height: 350px;
     margin-top: 6px;
@@ -548,35 +561,49 @@ h5 p{
   font-weight: 300;
   font-style: normal;
 }
-
-form {
+/* email-form */
+#emailbox {
   display: flex;
   justify-content:center;
   align-content: center;
-  width: 100%;
+  flex-direction: row;
+  max-width: 100%;
 }
 
-input{
+#enteremail {
 -webkit-border-radius: 50px;
 -moz-border-radius: 50px;
 border-radius: 50px;
 width: 50%;
-max-width: px;
-height: 2rem;
+max-width: 300px;
+min-width: 250px;
+height: 2.5rem;
 margin-top: 15px;
-position: relative;
+position: absolute;
+border: 0;
+
 }
 
-button {
+input:focus{
+  outline: none;
+}
+
+#subbutton {
   color: white;
   border-radius: 25px;
   background-color: #e2574c;
-  width: 6rem;
-  height: 1.7rem;
-  position: absolute;
+  width: 8rem;
+  height: 2.2rem;
+  position: relative;
   font-size: 1rem;
   margin-top: 21px;
-  margin-left: 15%;
+  right: 0px;
+  border: 0;
+  bottom: 3.5px;
+}
+
+button:focus {
+  outline: none;
 }
 
 
@@ -621,6 +648,10 @@ footer {
   background-color: #242424;
 }
 
+footer a:hover {
+  color:#e2574c;
+}
+
 .find-us {
   display: flex;
   align-content: row;
@@ -630,10 +661,15 @@ footer {
   padding: 0px;
 }
 
+.find-us ul {
+  display: flex;
+}
+
 .find-us li {
   display: flex;
   margin: 10px;
   align-content: center;
+  flex-direction: row;
 }
 
 .other-footer {
@@ -650,7 +686,7 @@ footer {
   color: white;
 }
 
-footer .other-footer .coloredfeet p {
+#coloredfeet  {
   color: #969696;
 }
 
@@ -686,6 +722,10 @@ footer .other-footer .coloredfeet p {
     height: 30px;
   }
 
+  .navi {
+    border-top: none;
+  }
+
   .flexcontainer .cart {
     display: flex;
     align-content: center;
@@ -700,6 +740,7 @@ footer .other-footer .coloredfeet p {
   }
   .cart img[src="images/cart-icon.svg"] {
     width: 60px;
+    padding-top: 0px;
   }
 
   .cart a {
@@ -725,14 +766,14 @@ footer .other-footer .coloredfeet p {
     text-align: right;
   }
 
-  .year {
-        font-size: 100px;
+  #yearnav {
+        font-size: 50px;
         text-align: right;
     }
     .titlepics {
     display: flex;
     max-width: 1800px;
-    max-height: auto;
+    height: 25em;
     align-content: center;
     flex-direction: row;
     align-items: center;
@@ -746,21 +787,21 @@ footer .other-footer .coloredfeet p {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 49%;
-  height: 150px;
+  max-width: 50%;
+  height: 200px;
   flex-grow: 1;
 }
 
 
 
-.catalogue1-1 {
-  /* background-image: url(images/womens-category.jpg);
+.titlepics .catalogue1-1 {
+  background-image: url(images/womens-category.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center; */
-  max-width: 50%;
-  height: 150px;
+  align-items: center;
+  width: 49%;
+  height: 200px;
   flex-grow: 1;
 }
 
@@ -769,11 +810,12 @@ footer .other-footer .coloredfeet p {
  display: flex;
  flex-direction: row;
  align-content: space-between;
- height: 150px;
+ height: 200px;
  width: 50%;
  align-items: flex-start;
  margin-bottom: 6px;
  margin-left: 10px;
+ flex-grow: 1;
 }
 
 .catalogue2 {
@@ -806,13 +848,22 @@ footer .other-footer .coloredfeet p {
   width: 100%;
 }
 
+.catalogue3-1-1 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
 .catalogue3container {
   display: flex;
   flex-direction: row;
   align-content: space-between;
-  height: 150px;
-  width: 49%;
+  height: 200px;
+  width: 50%;
   margin-right: 10px;
+  flex-grow:1;
 
 }
 
@@ -860,12 +911,12 @@ footer {
   align-content: center;
   justify-content: space-around;
   flex-direction: row;
-  max-width: 1239px;
+  max-width: 2000px;
 
 }
 
 .smedia {
-  display: block;
+  display: inline-block;
 }
 
 .find-us {
@@ -877,6 +928,7 @@ footer {
   margin-top: 50px;
   text-align: right;
   max-width: 1239px;
+  left: 0;
 }
 
 .other-footer {
@@ -906,4 +958,4 @@ footer {
 
 @media screen and (min-width: 1240px) {
 
-}}
+  }

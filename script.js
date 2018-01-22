@@ -17,7 +17,8 @@ $('.main-carousel').flickity({
   cellAlign: 'left',
   contain: true,
   autoPlay: true,
-  pageDots: false
+  pageDots: false,
+  prevNextButtons: false,
 });
 
 // $('#subbutton').on('click', function(event) {
