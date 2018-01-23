@@ -1,7 +1,3 @@
-# Project 1 README
+Website for Aloha Apparel ver1.0. -Jan 22/ 18
 
-`this is a code block`
-
-> this is a quote 
-
-##this is a h2
+HTML used to structure the site, CSS used to style and a little javascript/ jquery to animate.

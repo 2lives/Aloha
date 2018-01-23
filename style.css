@@ -1,94 +1,140 @@
-@font-face {
-  font-family: 'Raleway';
-  src: url('Raleway-LightItalic.eot');
-  src: url('Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
-      url('Raleway-LightItalic.woff2') format('woff2'),
-      url('Raleway-LightItalic.ttf') format('truetype'),
-      url('Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
-  font-weight: 300;
-  font-style: italic;
-}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-@font-face {
-  font-family: 'Raleway';
-  src: url('Raleway-Light.eot');
-  src: url('Raleway-Light.eot?#iefix') format('embedded-opentype'),
-      url('Raleway-Light.woff2') format('woff2'),
-      url('Raleway-Light.ttf') format('truetype'),
-      url('Raleway-Light.svg#Raleway-Light') format('svg');
-  font-weight: 300;
-  font-style: normal;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-@font-face {
-  font-family: 'Raleway';
-  src: url('Raleway-Medium.eot');
-  src: url('Raleway-Medium.eot?#iefix') format('embedded-opentype'),
-      url('Raleway-Medium.woff2') format('woff2'),
-      url('Raleway-Medium.ttf') format('truetype'),
-      url('Raleway-Medium.svg#Raleway-Medium') format('svg');
-  font-weight: 500;
-  font-style: normal;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-@font-face {
-  font-family: 'Raleway';
-  src: url('Raleway-MediumItalic.eot');
-  src: url('Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
-      url('Raleway-MediumItalic.woff2') format('woff2'),
-      url('Raleway-MediumItalic.ttf') format('truetype'),
-      url('Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url('PlayfairDisplay-BoldItalic.eot');
-  src: url('PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
-      url('PlayfairDisplay-BoldItalic.woff2') format('woff2'),
-      url('PlayfairDisplay-BoldItalic.ttf') format('truetype'),
-      url('PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url('PlayfairDisplay-Italic.eot');
-  src: url('PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
-      url('PlayfairDisplay-Italic.woff2') format('woff2'),
-      url('PlayfairDisplay-Italic.ttf') format('truetype'),
-      url('PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url('PlayfairDisplay-Regular.eot');
-  src: url('PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-      url('PlayfairDisplay-Regular.woff2') format('woff2'),
-      url('PlayfairDisplay-Regular.ttf') format('truetype'),
-      url('PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url('PlayfairDisplay-Bold.eot');
-  src: url('PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
-      url('PlayfairDisplay-Bold.woff2') format('woff2'),
-      url('PlayfairDisplay-Bold.ttf') format('truetype'),
-      url('PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
-
 body {
-  margin: 0;
-  border: 0;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of css reset */
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-LightItalic.eot');
+  src: url('fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Raleway-LightItalic.woff2') format('woff2'),
+      url('fonts/Raleway-LightItalic.ttf') format('truetype'),
+      url('fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Light.eot');
+  src: url('fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Raleway-Light.woff2') format('woff2'),
+      url('fonts/Raleway-Light.ttf') format('truetype'),
+      url('fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Medium.eot');
+  src: url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Raleway-Medium.woff2') format('woff2'),
+      url('fonts/Raleway-Medium.ttf') format('truetype'),
+      url('fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-MediumItalic.eot');
+  src: url('fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Raleway-MediumItalic.woff2') format('woff2'),
+      url('fonts/Raleway-MediumItalic.ttf') format('truetype'),
+      url('fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('fonts/PlayfairDisplay-BoldItalic.eot');
+  src: url('fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+      url('fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+      url('fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('fonts/PlayfairDisplay-Italic.eot');
+  src: url('fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+      url('fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+      url('fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('fonts/PlayfairDisplay-Regular.eot');
+  src: url('fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+      url('fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+      url('fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('fonts/PlayfairDisplay-Bold.eot');
+  src: url('fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+      url('fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+      url('fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
 }
 
 ul{
@@ -199,7 +245,7 @@ ul{
   }
 
   .navi a:hover  {
-    color: (rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 1.0))
+    color: #b64036;
   }
 
 
@@ -213,6 +259,17 @@ ul{
   flex-direction: column;
 }
 
+.titlepics a{
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+
+.titlepics a:hover {
+  color: rgb(247, 223, 186)
+}
+
 .titlepics p {
   font-family: 'Raleway';
   font-weight: 500;
@@ -224,7 +281,7 @@ ul{
 }
 
 .catalogue1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
              url(images/mens-category.jpg);
   background-size: cover;
   background-position: center;
@@ -238,7 +295,7 @@ ul{
 }
 
 .catalogue1-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
             url(images/womens-category.jpg);
   background-size: cover;
   background-position: center;
@@ -260,7 +317,7 @@ ul{
 }
 
 .catalogue2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
         url(images/trends-category.jpg);
   background-size: cover;
   background-position: center;
@@ -274,7 +331,7 @@ ul{
 }
 
 .catalogue2-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
            url(images/glasses-category.jpg);
   background-size: cover;
   background-position: center;
@@ -297,7 +354,7 @@ ul{
 }
 
 .catalogue3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
        url(images/sale-category.jpg);
   background-size: cover;
   background-position: center;
@@ -311,7 +368,7 @@ ul{
 }
 
 .catalogue3-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
        url(images/bags-category.jpg);
   background-size: cover;
   background-position: center;
@@ -325,11 +382,10 @@ ul{
 
 
 .container {
-  
-  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); */
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-            url(images/banner-girl.png) no-repeat top center, 
+            url(images/banner-girl.png) no-repeat  center 100px, 
             url(images/flower-bkgd.jpg);
+            
   background-size: auto, 300px, cover;
   position: relative;
   display: flex;
@@ -445,22 +501,12 @@ h3 ul{
   padding: 0px;
   max-width: 100%;
 }
-
-/* h3 ul img {
-  max-width: 599px;
-  max-height: auto;
-} */
-
-
 .spring-summer-collection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
 }
-
-
-
 .spring-summer-font{
     font-family: 'Playfair Display';
     font-weight: normal;
@@ -509,13 +555,6 @@ h1 p {
   line-height: 1.5em;
   color: #2d2d2d;
 }
-
-/* *{
-  border-top: 1px solid black;
-   border-bottom: 1px solid #ccc;
-} */
-
-
 .updates {
     font-family: 'Playfair Display';
     font-weight: normal;
@@ -530,6 +569,9 @@ h1 p {
     margin-top: 6px;
     margin-bottom: 6px;
     border: 0px;
+    font-size: 16px;
+    color: white;
+    text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
 
 .h5container {
@@ -541,19 +583,23 @@ h1 p {
   line-height: 2;
 }
 
-h5 .signup {
+#signup {
   font-family: 'Playfair Display';
   font-weight: bold;
   font-style: italic;
   font-weight: 300;
   font-size: 28px;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+  color: white;
 }
 
-h5 .update{
+#update{
   font-family: 'Playfair Display';
   font-weight: bold;
   font-style: normal;
   font-size: 28px;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+  color: white;
 }
 
 h5 p{
@@ -563,23 +609,22 @@ h5 p{
 }
 /* email-form */
 #emailbox {
-  display: flex;
-  justify-content:center;
-  align-content: center;
-  flex-direction: row;
-  max-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
 }
 
 #enteremail {
+
+  box-sizing: border-box;
+
 -webkit-border-radius: 50px;
 -moz-border-radius: 50px;
 border-radius: 50px;
-width: 50%;
-max-width: 300px;
-min-width: 250px;
+width: 100%;
 height: 2.5rem;
-margin-top: 15px;
-position: absolute;
 border: 0;
 
 }
@@ -594,16 +639,22 @@ input:focus{
   background-color: #e2574c;
   width: 8rem;
   height: 2.2rem;
-  position: relative;
+  position: absolute;
   font-size: 1rem;
-  margin-top: 21px;
-  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3px;
   border: 0;
   bottom: 3.5px;
 }
 
+
 button:focus {
   outline: none;
+}
+
+#subbutton:hover {
+  background: #b64036
 }
 
 
@@ -752,6 +803,14 @@ footer a:hover {
     width: 60%;
     margin-top: 20px;
   }
+
+  h2 .newcollection {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+  }
   
   
   .spring-summer-collection {
@@ -787,9 +846,13 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 50%;
+  width: 50%;
   height: 200px;
   flex-grow: 1;
+}
+
+.titlepics p {
+  font-size: 20px;
 }
 
 
@@ -800,7 +863,7 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 49%;
+  width: 50%;
   height: 200px;
   flex-grow: 1;
 }
@@ -824,7 +887,7 @@ footer a:hover {
   display: flex; 
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 25%;
   height: 100%;
   flex-grow: 1;
 }
@@ -835,7 +898,7 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 25%;
   height: 100%;
   flex-grow: 1;
 }
@@ -873,8 +936,9 @@ footer a:hover {
   display: flex; 
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 25%;
   height: 100%;
+  flex-grow: 1;
 }
 
 .catalogue3-1 {
@@ -883,8 +947,9 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 25%;
   height: 100%;
+  flex-grow: 1;
 }
 
 h1 {
@@ -902,6 +967,10 @@ h1 p {
 
  .signup{
   font-size: 34px;
+}
+
+#updates .csslinebreak {
+  display: block;
 }
 
 
@@ -945,21 +1014,25 @@ footer {
   justify-content: flex-start;
   padding-right: 50px;
   height: 50px;
+  text-align: left;
   
 }
-
-.find-us li {
-  margin: 5px;
-}
  
-
-.find-us a,
-.find-us a:visited {
+ a:visited {
   color: white;
+}
+
+footer a:hover {
+  color:#e2574c;
 }
 
 
 
 @media screen and (min-width: 1240px) {
+  .spring-summer-font{
+    font-size: 60px;
+  }
 
+  #year{
+  font-size: 60px;
   }
