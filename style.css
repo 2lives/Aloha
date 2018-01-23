@@ -135,7 +135,7 @@ ul{
   }
 
 .cart img[src="images/cart-icon.svg"] {
-  width: 70px;
+  width: 65px;
   padding-top: 20px;
 }
 
@@ -705,7 +705,7 @@ footer a:hover {
   }
 
   .flexcontainer .logothumbnail img{
-    min-width: 80px;
+    min-width: 70px;
     width: 100%;
     height: 100px;
     flex-shrink: 1;
@@ -953,6 +953,10 @@ footer {
 }
  
 
+.find-us a,
+.find-us a:visited {
+  color: white;
+}
 
 
 
