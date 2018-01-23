@@ -841,8 +841,10 @@ footer a:hover {
  }
 
  .titlepics .catalogue1 {
-  background-image: url(images/mens-category.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+          url(images/mens-category.jpg);
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -858,7 +860,9 @@ footer a:hover {
 
 
 .titlepics .catalogue1-1 {
-  background-image: url(images/womens-category.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+          url(images/womens-category.jpg);
+  background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -882,8 +886,10 @@ footer a:hover {
 }
 
 .catalogue2 {
-  background-image: url(images/trends-category.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+          url(images/trends-category.jpg);
   background-size: cover;
+  background-position: center;
   display: flex; 
   justify-content: center;
   align-items: center;
@@ -893,8 +899,10 @@ footer a:hover {
 }
 
 .catalogue2-1 {
-  background-image: url(images/glasses-category.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+          url(images/glasses-category.jpg);
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -931,8 +939,10 @@ footer a:hover {
 }
 
 .catalogue3 {
-  background-image: url(images/sale-category.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+          url(images/sale-category.jpg);
   background-size: cover;
+  background-position: center;
   display: flex; 
   justify-content: center;
   align-items: center;
@@ -942,8 +952,10 @@ footer a:hover {
 }
 
 .catalogue3-1 {
-  background-image: url(images/bags-category.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+          url(images/bags-category.jpg);
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
