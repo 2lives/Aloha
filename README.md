@@ -4,9 +4,13 @@ A static single page site, displaying items on sale at Aloha Apparel.
 HTML used to structure the site, CSS used to style and a little javascript / jquery to animate.
 Carousel implemented with an external plugin called "Flickity",
 
+    link to flickity: https://flickity.metafizzy.co/
+
 <img src="/readme-images/FireShot Capture 3 - Aloha Supply Co. - file____Users_brandonliu_Desktop_aloha_index.html.png">
 
 Icons implemented using a "FontAwesome" CDN. 
+
+    link to fontawesome cdn: https://fontawesome.com/get-started
 
 <img src="/readme-images/FireShot Capture 4 - Aloha Supply Co. - file____Users_brandonliu_Desktop_aloha_index.html.png">
 
